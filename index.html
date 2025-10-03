@@ -4,67 +4,48 @@
   <meta charset="UTF-8">
   <title>Hoàng Anh Thi - CV</title>
 
-  <!-- Open Graph cho Facebook/Zalo/LinkedIn -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Hoàng Anh Thi - CV">
-  <meta property="og:description" content="Chemist (Analytical, Food & Environmental Chemistry) - Download my CV here.">
-  <meta property="og:image" content="https://anhthi9833-svg.github.io/cv-hoanganhthi/cv-thumbnail.jpg">
-  <meta property="og:url" content="https://anhthi9833-svg.github.io/cv-hoanganhthi/">
+  <meta property="og:description" content="Chemist with expertise in Analytical, Food, and Environmental Chemistry.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://anhthi9833-svg.github.io/cv-hoanganhthi/">
 
-  <!-- Cho hiển thị tốt trên mobile -->
+  <!-- Mobile friendly -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS cơ bản -->
+  <!-- CSS -->
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #e8eef5);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      max-width: 600px;
       text-align: center;
-      padding: 50px;
-      background: #f9fafb;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #0078d7;
     }
     h1 {
+      margin: 10px 0 5px;
+      font-size: 28px;
       color: #222;
-      margin-bottom: 10px;
     }
-    p {
-      color: #555;
-      margin-bottom: 25px;
-      font-size: 18px;
-    }
-    a.download-btn {
-      display: inline-block;
-      padding: 12px 24px;
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-      background-color: #0078d7;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-    a.download-btn:hover {
-      background-color: #005ea6;
-    }
-    .preview {
-      margin-top: 30px;
-    }
-    .preview img {
-      max-width: 500px;
-      width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-  </style>
-</head>
-<body>
-  <h1>Hoàng Anh Thi - CV</h1>
-  <p>I am a chemist with expertise in Analytical, Food, and Environmental Chemistry.</p>
-  <a href="CV.pdf" target="_blank" class="download-btn">📄 View & Download CV (PDF)</a>
-
-  <div class="preview">
-    <h2>🔍 Preview</h2>
-    <img src="cv-thumbnail.jpg" alt="CV Preview">
-  </div>
-</body>
-</html>
+    h2 {
+      margin: 0 0 20px;
+      fon
