@@ -1,25 +1,69 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Hoàng Anh Thi - CV</title>
 
-  <!-- Open Graph meta tags cho Facebook -->
+  <!-- Open Graph cho Facebook/Zalo/LinkedIn -->
   <meta property="og:title" content="Hoàng Anh Thi - CV">
-  <meta property="og:description" content="Chemist (Hóa phân tích, Hóa thực phẩm, Hóa môi trường) - Xem và tải CV của tôi tại đây.">
+  <meta property="og:description" content="Chemist (Analytical, Food & Environmental Chemistry) - Download my CV here.">
   <meta property="og:image" content="https://anhthi9833-svg.github.io/cv-hoanganhthi/cv-thumbnail.jpg">
   <meta property="og:url" content="https://anhthi9833-svg.github.io/cv-hoanganhthi/">
+  <meta property="og:type" content="website">
 
   <!-- Cho hiển thị tốt trên mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS cơ bản -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background: #f9fafb;
+    }
+    h1 {
+      color: #222;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #555;
+      margin-bottom: 25px;
+    }
+    a.download-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background-color: #0078d7;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    a.download-btn:hover {
+      background-color: #005ea6;
+    }
+    .preview {
+      margin-top: 30px;
+    }
+    .preview img {
+      max-width: 500px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
+<body>
   <h1>Hoàng Anh Thi - CV</h1>
-  <p>Tôi là một nhà hóa học với kinh nghiệm trong lĩnh vực Hóa phân tích, Hóa thực phẩm và Hóa môi trường.</p>
-  <p>
-    📄 <a href="CV.pdf" target="_blank" style="font-size: 18px; text-decoration: none; color: blue;">
-      Xem CV (PDF)
-    </a>
-  </p>
+  <p>Chemist (Analytical, Food & Environmental Chemistry)</p>
+  <a href="CV.pdf" target="_blank" class="download-btn">📄 Xem & Tải CV (PDF)</a>
+
+  <div class="preview">
+    <h2>🔍 Preview</h2>
+    <img src="cv-thumbnail.jpg" alt="CV Preview">
+  </div>
 </body>
 </html>
