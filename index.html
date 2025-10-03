@@ -2,35 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hoàng Anh Thi - CV</title>
-
-  <meta property="og:title" content="Hoàng Anh Thi - CV">
-  <meta property="og:description" content="Chemist with expertise in Analytical, Food, and Environmental Chemistry.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://anhthi9833-svg.github.io/cv-hoanganhthi/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoàng Anh Thi - CV</title>
+  <meta property="og:title" content="Hoàng Anh Thi - CV">
+  <meta property="og:description" content="Chemist specializing in Analytical, Food, and Environmental Chemistry.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('chemistry-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-
-      background: #f0f4f8 url("chemistry-bg.jpg") no-repeat center center fixed;
-      background-size: cover;
-      color: #333;
+      transition: background-color 0.3s, color 0.3s;
     }
     .card {
       background: rgba(255, 255, 255, 0.9);
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-      max-width: 600px;
+      padding: 30px;
+      border-radius: 20px;
       text-align: center;
-      transition: all 0.3s ease;
+      max-width: 400px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s, color 0.3s;
     }
     .avatar {
       width: 120px;
@@ -38,85 +37,103 @@
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 20px;
-      border: 3px solid #0078d7;
+      border: 4px solid #4CAF50;
     }
     h1 {
-      margin: 10px 0 5px;
-      font-size: 28px;
-    }
-    h2 {
-      margin: 0 0 20px;
-      font-weight: normal;
-      font-size: 18px;
+      margin: 10px 0;
+      font-size: 1.8em;
     }
     p {
-      font-size: 16px;
-      margin-bottom: 30px;
+      font-size: 1em;
+      margin: 10px 0 20px;
     }
-    a.download-btn {
+    .download-btn {
       display: inline-block;
-      padding: 14px 28px;
-      font-size: 16px;
-      font-weight: bold;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background: #4CAF50;
       color: white;
-      background-color: #0078d7;
-      border-radius: 10px;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      border-radius: 8px;
+      transition: background 0.3s;
     }
-    a.download-btn:hover {
-      background-color: #005ea6;
+    .download-btn:hover {
+      background: #45a049;
     }
     .contact {
-      margin-top: 25px;
-      font-size: 14px;
-      line-height: 1.8;
+      margin-top: 20px;
     }
     .contact a {
-      color: #0078d7;
+      margin: 0 10px;
+      color: inherit;
+      font-size: 1.2em;
       text-decoration: none;
-      font-weight: bold;
-    }
-    .contact a:hover {
-      text-decoration: underline;
     }
 
-    /* 🌙 DARK MODE */
-    @media (prefers-color-scheme: dark) {
-      body {
-        background: #0d1117 url("chemistry-bg.png") no-repeat center center fixed;
-        background-size: cover;
-        color: #ddd;
-      }
-      .card {
-        background: rgba(20, 25, 30, 0.9);
-        box-shadow: 0 6px 20px rgba(0,0,0,0.6);
-      }
-      h1 { color: #f0f6fc; }
-      h2 { color: #9ba3b4; }
-      p  { color: #c9d1d9; }
-      .contact { color: #aaa; }
-      .contact a { color: #58a6ff; }
-      a.download-btn {
-        background-color: #238636;
-      }
-      a.download-btn:hover {
-        background-color: #2ea043;
-      }
+    /* Dark mode class */
+    body.dark {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    body.dark .card {
+      background: rgba(30, 30, 30, 0.95);
+      color: #f1f1f1;
+    }
+    body.dark .download-btn {
+      background: #2196F3;
+    }
+    body.dark .download-btn:hover {
+      background: #1976D2;
+    }
+
+    /* Toggle button */
+    .toggle-btn {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 14px;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition: background 0.3s;
+    }
+    .toggle-btn:hover {
+      background: #555;
     }
   </style>
 </head>
 <body>
+  <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
   <div class="card">
-    <img src="avatar.jpg" alt="Hoàng Anh Thi" class="avatar">
+    <img src="avatar.jpg" alt="Avatar" class="avatar">
     <h1>Hoàng Anh Thi</h1>
-    <h2>QA/QC Technician</h2>
-    <p>Analytical, Food, and Environmental Chemistry.</p>
-    <a href="CV.pdf" target="_blank" class="download-btn">📄 View & Download CV (PDF)</a>
+    <h3>QA/QC Technician</h3>
+    <p>Chemist specializing in Analytical, Food, and Environmental Chemistry.</p>
+    <a href="CV.pdf" target="_blank" class="download-btn">
+      <i class="fas fa-file-pdf"></i> View & Download CV
+    </a>
     <div class="contact">
-      📧 Email: <a href="mailto:anhthi9833@gmail.com">anhthi9833@gmail.com</a><br>
-      🔗 LinkedIn: <a href="https://www.linkedin.com/in/hoang-thi-439bab157" target="_blank">linkedin.com/in/hoang-thi</a>
+      <a href="mailto:anhthi9833@gmail.com"><i class="fas fa-envelope"></i> Gmail</a>
+      <a href="https://www.linkedin.com/in/hoang-thi-439bab157" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
     </div>
   </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+      const btn = document.querySelector(".toggle-btn");
+      if (document.body.classList.contains("dark")) {
+        btn.textContent = "☀️ Light Mode";
+      } else {
+        btn.textContent = "🌙 Dark Mode";
+      }
+    }
+  </script>
 </body>
 </html>
